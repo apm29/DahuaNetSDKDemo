@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/time_title_enable_layout"
+        style="@style/config_relativeLayout">
+
+        <TextView
+            android:id="@+id/time_title_enable_label"
+            style="@style/config_text"
+            android:text="@string/time_title_enable" />
+
+        <ImageView
+            android:id="@+id/time_title_enable_btn"
+            style="@style/config_image"
+            android:src="@drawable/mm_on_off"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/show_week_enable_layout"
+        style="@style/config_relativeLayout"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/show_week_enable_label"
+            style="@style/config_text"
+            android:text="@string/show_week" />
+
+        <ImageView
+            android:id="@+id/show_week_enable_btn"
+            style="@style/config_image"
+            android:src="@drawable/mm_on_off"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/time_title_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/set_time_title_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/set"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

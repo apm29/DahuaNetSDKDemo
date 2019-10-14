@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/start_time_picker_layout">
+
+    <DatePicker
+        android:id="@+id/date_set_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/time_set_picker"
+        android:isScrollContainer="true"
+        android:timePickerMode="spinner"
+        android:layout_below="@+id/date_set_picker"/>
+</RelativeLayout>

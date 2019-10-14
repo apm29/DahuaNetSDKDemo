@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detect_time_layout"
+    style="@style/config_relativeLayout"
+    android:background="@drawable/retange_line">
+
+        <ImageView
+            android:id="@+id/detect_time_enable"
+            style="@style/config_image_left"
+            android:src="@drawable/mm_on_off"
+            android:tag="off" />
+
+        <TextView
+            android:id="@+id/detect_time_index"
+            style="@style/config_text"
+            android:layout_toRightOf="@id/detect_time_enable"/>
+
+        <TextView
+            android:id="@+id/detect_time_text_set"
+            style="@style/config_text_image"
+            android:layout_toRightOf="@id/detect_time_index"
+            android:drawableRight="@drawable/mm_submenu"
+            android:text="00:00:00-23:59:59"/>
+</RelativeLayout>
+

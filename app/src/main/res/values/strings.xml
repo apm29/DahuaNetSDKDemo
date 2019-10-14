@@ -1,0 +1,852 @@
+<resources>
+    <string name="msg_subscribed">Subscribe to new topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="app_name">NetSDK Demo</string>
+
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+
+    <!-- common string for all activity -->
+    <string name="common_information">Please Choose Suitable Environment</string>
+    <string name="common_login">Login</string>
+    <string name="common_logout">Logout</string>
+    <string name ="common_remember_info"> Remember information</string>
+    <string name="logining">Logining...</string>
+    <string name="waiting">Waiting...</string>
+
+    <!--Title-->
+    <string name="title_function_list">Function List</string>
+
+    <!-- activity_main -->
+    <string name="activity_main_ip"> IP </string>
+    <string name="activity_main_search_device"> Search Device </string>
+    <string name="activity_main_ip_domin"> IP/Domain </string>
+    <string name="activity_main_wifi_config"> WIFI Configuration </string>
+    <string name="activity_main_init_dev_account"> Init DevAccount </string>
+    <string name="activity_main_p2p"> P2P </string>
+    <string name="activity_preview"> SingleChannelPreview </string>
+    <string name="activity_main_talk"> Talk </string>
+    <string name="activity_main_ap_config"> AP Configuration </string>
+
+    <!--activity_iplogin -->
+    <string name="activity_iplogin_device_ip">Device IP</string>
+    <string name="activity_iplogin_device_port">Device Port</string>
+    <string name="activity_iplogin_username">Username</string>
+    <string name="activity_iplogin_password">Password</string>
+    <string name="activity_iplogin_port_err">Please check input device port</string>
+    <string name="activity_iplogin_login_success">Login device success</string>
+    <string name="activity_iplogin_login_failed">Login device failed</string>
+
+    <string name="activity_iplogin_ip_empty">Please input ip address</string>
+    <string name="activity_iplogin_port_empty">Please input port</string>
+    <string name="activity_iplogin_username_empty">Please input username</string>
+    <string name="activity_iplogin_password_empty">Please input password</string>
+
+    <string name="activity_p2plogin_server_port_err">Please check input p2p port</string>
+    <string name="activity_p2plogin_server_ip_empty">Please input p2p server ip</string>
+    <string name="activity_p2plogin_server_port_empty">Please input p2p server port</string>
+    <string name="activity_p2plogin_username_empty">Please input p2p username</string>
+    <string name="activity_p2plogin_password_empty">Please input p2p password</string>
+    <string name="activity_p2plogin_device_sn_empty">Please input device sn</string>
+    <string name="failed_start_server">Failed to start P2P service.</string>
+
+    <string name="please_input_device_sn">Please input device sn.</string>
+    <string name="please_input_wlan_ssid">Please input waln ssid.</string>
+    <string name="please_check_wlan_ssid">Please check alan ssid.</string>
+    <string name="please_input_init_passwd">Please input init passwd.</string>
+    <string name="please_input_init_phone">Please input phone.</string>
+    <string name="please_input_init_mail">Please input mail.</string>
+
+    <string name ="activity_iplogin_password_incorrect">Incorrect password!</string>
+    <string name ="activity_iplogin_no_this_account">No this account!</string>
+    <string name ="activity_iplogin_time_out">Time out!!</string>
+    <string name ="activity_iplogin_account_logined">Account have been logined!!</string>
+    <string name ="activity_iplogin_accout_had_locked">Account have been locked!!</string>
+    <string name ="activity_iplogin_user_illegal">The user has listed into illegal!!</string>
+    <string name ="activity_iplogin_system_busy">The system is busy!</string>
+    <string name ="activity_iplogin_no_host">You Can\'t find the network server!!</string>
+
+    <!--activity_p2plogin-->
+    <string name="activity_p2plogin_server_ip">P2P Server IP</string>
+    <string name="activity_p2plogin_server_port">P2P Server Port</string>
+    <string name="activity_p2plogin_username">P2P Username</string>
+    <string name="activity_p2plogin_password">P2P Password</string>
+    <string name="activity_p2plogin_device_id">Device SN</string>
+    <string name="activity_p2plogin_device_port">Device Port</string>
+    <string name="activity_p2plogin_device_username">Device Username </string>
+    <string name="activity_p2plogin_device_password">Device Password</string>
+
+    <!-- activity_function_list -->
+    <string name="activity_function_list_live_preview"> Live Preview (Single Channel) </string>
+    <string name="activity_function_list_double_channel"> Live Preview (Double Channel)</string>
+    <string name="activity_function_list_play_back"> Playback </string>
+    <string name="activity_function_list_download_record">DownLoad Record</string>
+    <string name="activity_function_list_talk"> Talk </string>
+    <string name="activity_function_list_alarm_listen"> Alarm Listen </string>
+    <string name="activity_function_list_alarm_push"> Alarm Push </string>
+    <string name="activity_function_list_alarm_control"> Alarm Control </string>
+    <string name="activity_function_list_device_control"> Device Control </string>
+    <string name="activity_function_list_capture_picture"> Capture Picture </string>
+    <string name="activity_function_lise_interface_test">Interface Test</string>
+    <string name="activity_function_list_mark_record">Mark Record</string>
+    <string name="activity_function_list_video_talk">Video Talk</string>
+
+    <string name="channel">Channel</string>
+    <string name="stream_type"> Strream Type </string>
+
+    <string name="activity_queryLog_beginTime">Start</string>
+
+    <!--  activity_talk -->
+    <string name="talk">Talk&#160;</string>
+    <string name="transfer_mode">Transfer Mode</string>
+    <string name="transfer_channel">Transfer Channel</string>
+    <string name="set_transfer_channel">Set Transfer Channel&#160;</string>
+    <string name="set_transfer_mode">Set Transfer Mode&#160;</string>
+    <string name="start_talk"> Start Talk </string>
+    <string name="stop_talk"> Stop Talk </string>
+    <string name="speak_only"> Shout </string>
+    <string name="start_speak_only"> Start Shout</string>
+    <string name="stop_speak_only"> Stop Shout </string>
+    <string name="start_audio_record">Start Audio Record&#160;</string>
+    <string name="set_speaking_parameter">Set Speaking Parameter&#160;</string>
+    <string name="set_server_mode">Set Server Mode&#160;</string>
+    <string name="set_talk_encode_mode">Set Talk Encode Mode&#160;</string>
+    <array name="transfer_mode_array">
+        <item>Local(not transmit)</item>
+        <item>Remote(transmit)</item>
+    </array>
+
+    <!--  activity_video_talk -->
+    <string name="video_talk">Video Talk&#160;</string>
+    <string name="start_video_talk">Start Video Talk</string>
+    <string name="stop_video_talk">Stop Video Talk</string>
+    <string name="access_open">Access Open&#160;</string>
+    <string name="set_talk_client_mode">Set Talk Client Mode&#160;</string>
+    <string name="set_talk_speak_param">Set Talk Speak Param&#160;</string>
+
+
+    <!---capture picture activity-->
+    <string name="capture_picture_remote">Remote Capture</string>
+    <string name="capture_picture_local">Local Capture</string>
+    <string name="capture_picture_timer_start">Timer Capture</string>
+    <string name="capture_picture_timer_stop">Stop Capture</string>
+    <string name="capture_picture_channel">Capture Channel</string>
+    <string name="encode">Encode</string>
+    <string name="osd_channel_title">Chn Title</string>
+    <string name="osd_time_title">Time Title</string>
+
+    <array name="stream_type_array">
+        <item>Master Stream</item>
+        <item>Sub Stream</item>
+    <!--    <item>Sub-2 Stream</item> -->
+    <!--    <item>Sub-3 Stream</item> -->
+    </array>
+
+    <array name="stream_array">
+        <item>Master/Sub Stream</item>
+        <item>Master Stream</item>
+        <item>Sub Stream</item>
+    </array>
+
+    <string name="ptz_control">PTZ</string>
+    <string name="ptz_control_fragment_up">Up</string>
+    <string name="ptz_control_fragment_down">Down</string>
+    <string name="ptz_control_fragment_left">Left</string>
+    <string name="ptz_control_fragment_right">Right</string>
+    <string name="ptz_control_fragment_zoom_add">Zoom+</string>
+    <string name="ptz_control_fragment_zoom_dec">Zoom-</string>
+    <string name="ptz_control_fragment_focus_add">Focus+</string>
+    <string name="ptz_control_fragment_focus_dec">Focus-</string>
+    <string name="ptz_control_fragment_aperture_add">Iris+</string>
+    <string name="ptz_control_fragment_aperture_dec">Iris-</string>
+    <string name="ptz_control_fragment_setpreset">Set</string>
+    <string name="ptz_control_fragment_clearpreset">Clear</string>
+    <string name="ptz_control_fragment_gotopreset">Goto</string>
+    <string name="ptz_control_fragment_preset">Preset ID:</string>
+    <string name="ptz_control_fragment_info">PTZ support Sliding Operation, Zoom support two points Touch Operation. </string>
+    <string name="yes">OK</string>
+    <string name="input_number">Please Input Number.</string>
+
+    <!-- device control -->
+    <string name="device_control_restart">Reboot Device</string>
+    <string name="device_control_setuptime">Set Time</string>
+    <string name="device_control_gettime">Get Time</string>
+    <string name="config_startsearchdevice">StartSearchDevice</string>
+    <string name="config_stopsearchdevice">StopSearchDevice</string>
+    <string name="device_initialize">Initialize Device</string>
+
+    <string name="device_unable_init">Old Device,Device unable initialization</string>
+    <string name="device_had_init">Device had initialization</string>
+    <string name="start_search_device_failed">Start search device failed</string>
+    <string name="stop_search_device_failed">Stop search device failed</string>
+    <string name="init_device_failed">Init device failed</string>
+    <string name="init_device_success">Initialize device success</string>
+
+    <!-- alarm control -->
+    <string name="alarm_control_input_channel">InputChannel</string>
+    <string name="alarm_control_input_state">InputState</string>
+    <string name="alarm_control_output_channel">OutputChannel</string>
+    <string name="alarm_control_output_state">OutputState</string>
+    <string name="alarm_control_trigger_channel">TriggerChannel</string>
+    <string name="alarm_control_trigger_mode">TriggerMode</string>
+    <string name="get">Get</string>
+    <string name="set">Set</string>
+    <array name="alarm_state_array">
+        <item>Close</item>
+        <item>Open</item>
+    </array>
+    <array name="alarm_trigger_mode_array">
+        <item>Close</item>
+        <item>Manual</item>
+        <item>Auto</item>
+    </array>
+    <string name="device_no_support_alarm_input_control">Device not support alarm input control.</string>
+    <string name="device_no_support_alarm_output_control">Device not support alarm output control.</string>
+    <string name="device_no_support_alarm_trigger_control">Device not support alarm trigger control.</string>
+
+    <!-- alarm push activity -->
+    <string name="alarm_push">Alarm Push</string>
+    <string name="on">on</string>
+    <string name="off">off</string>
+    <string name="alarm_push_subscribe">Subscribe Alarm Push</string>
+    <string name="alarm_push_unsubscribe">Delete Alarm Push</string>
+    <string name="alarm_push_not_support_google_service">Google Service not support</string>
+    <string name="alarm_push_sub_successed">Subscribe succeed</string>
+    <string name="alarm_push_sub_failed">Subscribe failed</string>
+    <string name="alarm_push_unsub_successed">Unsubscribe succeed</string>
+    <string name="alarm_push_unsub_failed">Unsubscribe failed</string>
+    <string name="alarm_push_video_motion">Video motion</string>
+    <string name="alarm_push_unknown_type">Alarm unknown</string>
+    <string name="alarm_push_title">Alarm</string>
+    <string name="alarm_push_alarm_type">Alarm Type</string>
+    <string name="alarm_push_alarm_time">Alarm Time</string>
+
+    <!--live preview -->
+    <string name="live_preview_failed">Realplay failed.</string>
+    <string name="live_preview_not_open">Please start real play first.</string>
+    <string name="local_record_failed">Local record failed.</string>
+    <string name="open_stream">OpenStream</string>
+    <string name="live_preview_not_support_double_channel">The device not support double channel preview.</string>
+
+    <!-- alarm listen activity -->
+    <string name="alarm_listen_external_alarm">AlarmLocal</string>
+    <string name="alarm_listen_motion_alarm">VideoMotion</string>
+    <string name="alarm_listen_video_lost_alarm">VideoLoss</string>
+    <string name="alarm_listen_shelter_alarm">VideoBlind</string>
+    <string name="alarm_listen_disk_full_alarm">StorageLowSpace</string>
+    <string name="alarm_listen_disk_error_alarm">StorageFailure</string>
+    <string name="alarm_listen_alarm_channel">Ch</string>
+    <string name="alarm_listen_alarm_detect">Start</string>
+    <string name="alarm_listen_alarm_cancel">Stop</string>
+
+    <!-- playback activity -->
+    <string name="start_play_back">Start Playback</string>
+    <string name="stop_play_back">Stop Playback</string>
+    <string name="play_back_start">Play</string>
+    <string name="play_back_pause">Pause</string>
+    <string name="play_back_fast">Fast</string>
+    <string name="play_back_slow">Slow</string>
+    <string name="play_back_normal">Normal</string>
+    <string name="play_download_record">Download Record</string>
+    <string name="play_mark_record">Mark Record</string>
+    <string name="select_play_back_date">Pick Date</string>
+    <string name="play_back_endtime">End Time</string>
+    <string name="play_back_rate">Rate</string>
+    <array name="record_file_type">
+        <item>All Record</item>
+        <item>Alarm Record</item>
+    </array>
+
+    <string name="play_back_failed">Playback failed</string>
+    <string name="playback_changed">Please restart to playback</string>
+    <string name="fast_upper">Maximum fast forward has been reached</string>
+    <string name="slow_lower">Minimum slow rate has been reached</string>
+    <string name="repick_date_warn">Stop playback firstly,and repick date</string>
+    <string name="play_back_not_start">Please start playback first</string>
+    <string name="no_record_found">There is no searched result</string>
+
+    <!-- download record activity -->
+    <string name="download_start_time">Start Time</string>
+    <string name="download_end_time">End&#160;&#160; Time</string>
+    <string name="start_download">Start DownLoad</string>
+    <string name="stop_download">Stop DownLoad</string>
+    <string name="download_progress">Progress</string>
+
+    <string name="download_completed">DownLoad completed</string>
+    <string name="download_failed">DownLoad failed, please check channel/time</string>
+    <string name="please_first_stop_download">First please stop download</string>
+    <string name="please_restart_download">Please restart download</string>
+    <string name="downloading_progress">Downloading, progress</string>
+    <string name="download_complete_progress">Download completed, progress</string>
+    <string name="download_stop_progress">Download stop, progress</string>
+
+    <!-- mark record activity -->
+    <string name="mark_start_time">Start Time</string>
+    <string name="mark_end_time">End&#160;&#160; Time</string>
+    <string name="lock_record">Lock</string>
+    <string name="query_record">Query</string>
+    <string name="unlock_record">UnLock</string>
+    <string name="all_channel">All Chnnel</string>
+    <string name="select_time_continer">Select Time</string>
+    <string name="please_query_first">Please query first</string>
+    <string name="please_select_first">Please select first</string>
+    <string name="total_count">Total Count</string>
+    <string name="show_count">Show Count</string>
+    <string name="find_total_count_failed">Find total count failed</string>
+
+    <!-- netsdk error code -->
+    <string name="NET_NOERROR">No error</string>
+    <string name="NET_ERROR">Unknown error</string>
+    <string name="NET_SYSTEM_ERROR"> System error</string>
+    <string name="NET_NETWORK_ERROR">Protocol error </string>
+    <string name="NET_DEV_VER_NOMATCH">Device protocol does not match</string>
+    <string name="NET_INVALID_HANDLE">Handle is invalid</string>
+    <string name="NET_OPEN_CHANNEL_ERROR">Failed to open channel</string>
+    <string name="NET_CLOSE_CHANNEL_ERROR">Failed to close channel</string>
+    <string name="NET_ILLEGAL_PARAM">User parameter is illegal</string>
+    <string name="NET_SDK_INIT_ERROR">SDK initialization error</string>
+    <string name="NET_SDK_UNINIT_ERROR">SDK clear error</string>
+    <string name="NET_RENDER_OPEN_ERROR">Error occurs when apply for render resources.</string>
+    <string name="NET_DEC_OPEN_ERROR">Error occurs when opening the decoder library</string>
+    <string name="NET_DEC_CLOSE_ERROR">Error occurs when closing the decoder library</string>
+    <string name="NET_MULTIPLAY_NOCHANNEL">The detected channel number is 0</string>
+    <string name="NET_TALK_INIT_ERROR">Failed to initialize record library</string>
+    <string name="NET_TALK_NOT_INIT">The record library has not been initialized</string>
+    <string name="NET_TALK_SENDDATA_ERROR">Error occurs when sending out audio data</string>
+    <string name="NET_REAL_ALREADY_SAVING">The real-time has been protected.</string>
+    <string name="NET_NOT_SAVING">The real-time data has not been save.</string>
+    <string name="NET_OPEN_FILE_ERROR">Error occurs when opening the file.</string>
+    <string name="NET_PTZ_SET_TIMER_ERROR">Failed to enable PTZ to control timer.</string>
+    <string name="NET_RETURN_DATA_ERROR">Error occurs when verify returned data.</string>
+    <string name="NET_INSUFFICIENT_BUFFER">There is no sufficient buffer.</string>
+    <string name="NET_NOT_SUPPORTED">The current SDK does not support this function.</string>
+    <string name="NET_NO_RECORD_FOUND">There is no searched result.</string>
+    <string name="NET_NOT_AUTHORIZED">You have no operation right.</string>
+    <string name="NET_NOT_NOW">Can not operate right now.</string>
+    <string name="NET_NO_TALK_CHANNEL">There is no audio talk channel.</string>
+    <string name="NET_NO_AUDIO">There is no audio.</string>
+    <string name="NET_NO_INIT">The network SDK has not been initialized.</string>
+    <string name="NET_DOWNLOAD_END">The download completed.</string>
+    <string name="NET_EMPTY_LIST">There is no searched result.</string>
+    <string name="NET_ERROR_GETCFG_SYSATTR">Failed to get system property setup.</string>
+    <string name="NET_ERROR_GETCFG_SERIAL">Failed to get SN.</string>
+    <string name="NET_ERROR_GETCFG_GENERAL">Failed to get general property.</string>
+    <string name="NET_ERROR_GETCFG_DSPCAP">Failed to get DSP capacity description.</string>
+    <string name="NET_ERROR_GETCFG_NETCFG">Failed to get network channel setup.</string>
+    <string name="NET_ERROR_GETCFG_CHANNAME">Failed to get channel name.</string>
+    <string name="NET_ERROR_GETCFG_VIDEO">Failed to get video property.</string>
+    <string name="NET_ERROR_GETCFG_RECORD">Failed to get record setup</string>
+    <string name="NET_ERROR_GETCFG_PRONAME">Failed to get decoder protocol name</string>
+    <string name="NET_ERROR_GETCFG_FUNCNAME">Failed to get 232 COM function name.</string>
+    <string name="NET_ERROR_GETCFG_485DECODER">Failed to get decoder property</string>
+    <string name="NET_ERROR_GETCFG_232COM">Failed to get 232 COM setup</string>
+    <string name="NET_ERROR_GETCFG_ALARMIN">Failed to get external alarm input setup</string>
+    <string name="NET_ERROR_GETCFG_ALARMDET">Failed to get motion detection alarm</string>
+    <string name="NET_ERROR_GETCFG_SYSTIME">Failed to get device time</string>
+    <string name="NET_ERROR_GETCFG_PREVIEW">Failed to get preview parameter</string>
+    <string name="NET_ERROR_GETCFG_AUTOMT">Failed to get audio maintenance setup</string>
+    <string name="NET_ERROR_GETCFG_VIDEOMTRX">Failed to get video matrix setup</string>
+    <string name="NET_ERROR_GETCFG_COVER">Failed to get privacy mask zone setup</string>
+    <string name="NET_ERROR_GETCFG_WATERMAKE">Failed to get video watermark setup</string>
+    <string name="NET_ERROR_GETCFG_MULTICAST">Failed to get config multi cast port by channel</string>
+    <string name="NET_ERROR_SETCFG_GENERAL">Failed to modify general property</string>
+    <string name="NET_ERROR_SETCFG_NETCFG">Failed to modify channel setup</string>
+    <string name="NET_ERROR_SETCFG_CHANNAME">Failed to modify channel name</string>
+    <string name="NET_ERROR_SETCFG_VIDEO">Failed to modify video channel</string>
+    <string name="NET_ERROR_SETCFG_RECORD">Failed to modify record setup</string>
+    <string name="NET_ERROR_SETCFG_485DECODER">Failed to modify decoder property</string>
+    <string name="NET_ERROR_SETCFG_232COM">Failed to modify 232 COM setup</string>
+    <string name="NET_ERROR_SETCFG_ALARMIN">Failed to modify external input alarm setup</string>
+    <string name="NET_ERROR_SETCFG_ALARMDET">Failed to modify motion detection alarm setup</string>
+    <string name="NET_ERROR_SETCFG_SYSTIME">Failed to modify device time</string>
+    <string name="NET_ERROR_SETCFG_PREVIEW">Failed to modify preview parameter</string>
+    <string name="NET_ERROR_SETCFG_AUTOMT">Failed to modify auto maintenance setup</string>
+    <string name="NET_ERROR_SETCFG_VIDEOMTRX">Failed to modify video matrix setup</string>
+    <string name="NET_ERROR_SETCFG_COVER">Failed to modify privacy mask zone</string>
+    <string name="NET_ERROR_SETCFG_WATERMAKE">Failed to modify video watermark setup</string>
+    <string name="NET_ERROR_SETCFG_WLAN">Failed to modify wireless network information</string>
+    <string name="NET_ERROR_SETCFG_WLANDEV">Failed to select wireless network device</string>
+    <string name="NET_ERROR_SETCFG_REGISTER">Failed to modify the actively registration parameter setup.</string>
+    <string name="NET_ERROR_SETCFG_CAMERA">Failed to modify camera property</string>
+    <string name="NET_ERROR_SETCFG_INFRARED">Failed to modify IR alarm setup</string>
+    <string name="NET_ERROR_SETCFG_SOUNDALARM">Failed to modify audio alarm setup</string>
+    <string name="NET_ERROR_SETCFG_STORAGE">Failed to modify storage position setup</string>
+    <string name="NET_AUDIOENCODE_NOTINIT">The audio encode port has not been successfully initialized.</string>
+    <string name="NET_DATA_TOOLONGH">The data are too long.</string>
+    <string name="NET_UNSUPPORTED">The device does not support current operation.</string>
+    <string name="NET_DEVICE_BUSY">Device resources is not sufficient.</string>
+    <string name="NET_SERVER_STARTED">The server has boot up</string>
+    <string name="NET_SERVER_STOPPED">The server has not fully boot up</string>
+    <string name="NET_LISTER_INCORRECT_SERIAL">Input serial number is not correct.</string>
+    <string name="NET_QUERY_DISKINFO_FAILED">Failed to get HDD information.</string>
+    <string name="NET_ERROR_GETCFG_SESSION">Failed to get connect session information.</string>
+    <string name="NET_USER_FLASEPWD_TRYTIME">The password you typed is incorrect. </string>
+    <string name="NET_LOGIN_ERROR_PASSWORD">Password is not correct</string>
+    <string name="NET_LOGIN_ERROR_USER">The account does not exist</string>
+    <string name="NET_LOGIN_ERROR_TIMEOUT">Time out for log in returned value.</string>
+    <string name="NET_LOGIN_ERROR_RELOGGIN">The account has logged in</string>
+    <string name="NET_LOGIN_ERROR_LOCKED">The account has been locked</string>
+    <string name="NET_LOGIN_ERROR_BLACKLIST">The account has been in the black list</string>
+    <string name="NET_LOGIN_ERROR_BUSY">Resources are not sufficient. System is busy now.</string>
+
+    <string name="NET_LOGIN_ERROR_CONNECT">Time out. Please check network and try again.</string>
+
+    <string name="NET_LOGIN_ERROR_NETWORK">Network connection failed.</string>
+
+    <string name="NET_LOGIN_ERROR_SUBCONNECT">Successfully logged in the device but can not create video channel.</string>
+
+    <string name="NET_LOGIN_ERROR_MAXCONNECT">Exceed the max connect number</string>
+
+    <string name="NET_LOGIN_ERROR_PROTOCOL3_ONLY">Protocol 3 support</string>
+
+    <string name="NET_LOGIN_ERROR_UKEY_LOST">There is no USB or USB info error</string>
+
+    <string name="NET_LOGIN_ERROR_NO_AUTHORIZED">Client-end IP address has no right to login</string>
+
+    <string name="NET_RENDER_SOUND_ON_ERROR">Error occurs when Render library open audio.</string>
+
+    <string name="NET_RENDER_SOUND_OFF_ERROR">Error occurs when Render library close audio</string>
+
+    <string name="NET_RENDER_SET_VOLUME_ERROR">Error occurs when Render library control volume</string>
+
+    <string name="NET_RENDER_ADJUST_ERROR">Error occurs when Render library set video parameter</string>
+
+    <string name="NET_RENDER_PAUSE_ERROR">Error occurs when Render library pause play</string>
+
+    <string name="NET_RENDER_SNAP_ERROR">Render library snapshot error</string>
+
+    <string name="NET_RENDER_STEP_ERROR">Render library stepper error</string>
+
+    <string name="NET_RENDER_FRAMERATE_ERROR">Error occurs when Render library set frame rate.</string>
+
+    <string name="NET_RENDER_DISPLAYREGION_ERROR">Occurs when Render lib setting show region</string>
+
+    <string name="NET_RENDER_GETOSDTIME_ERROR">An error occurred when Render library getting current play time</string>
+
+    <string name="NET_GROUP_EXIST">Group name has been existed.</string>
+
+    <string name="NET_GROUP_NOEXIST">The group name does not exist.</string>
+
+    <string name="NET_GROUP_RIGHTOVER">The group right exceeds the right list!</string>
+
+    <string name="NET_GROUP_HAVEUSER">The group can not be removed since there is user in it!</string>
+
+    <string name="NET_GROUP_RIGHTUSE">The user has used one of the group right. It can not be removed.</string>
+
+    <string name="NET_GROUP_SAMENAME">New group name has been existed</string>
+
+    <string name="NET_USER_EXIST">The user name has been existed</string>
+
+    <string name="NET_USER_NOEXIST">The account does not exist.</string>
+
+    <string name="NET_USER_RIGHTOVER">User right exceeds the group right.</string>
+
+    <string name="NET_USER_PWD">Reserved account. It does not allow to be modified.</string>
+
+    <string name="NET_USER_FLASEPWD">Password is not correct</string>
+
+    <string name="NET_USER_NOMATCHING">Password is invalid</string>
+
+    <string name="NET_USER_INUSE">Account in use</string>
+
+    <string name="NET_ERROR_GETCFG_ETHERNET">Failed to get network card setup.</string>
+
+    <string name="NET_ERROR_GETCFG_WLAN">Failed to get wireless network information.</string>
+
+    <string name="NET_ERROR_GETCFG_WLANDEV">Failed to get wireless network device.</string>
+
+    <string name="NET_ERROR_GETCFG_REGISTER">Failed to get actively registration parameter.</string>
+
+    <string name="NET_ERROR_GETCFG_CAMERA">Failed to get camera property</string>
+
+    <string name="NET_ERROR_GETCFG_INFRARED">Failed to get IR alarm setup</string>
+
+    <string name="NET_ERROR_GETCFG_SOUNDALARM">Failed to get audio alarm setup</string>
+
+    <string name="NET_ERROR_GETCFG_STORAGE">Failed to get storage position</string>
+
+    <string name="NET_ERROR_GETCFG_MAIL">Failed to get mail setup.</string>
+
+    <string name="NET_CONFIG_DEVBUSY">Can not set right now.</string>
+
+    <string name="NET_CONFIG_DATAILLEGAL">The configuration setup data are illegal.</string>
+
+    <string name="NET_ERROR_GETCFG_DST">Failed to get DST setup</string>
+
+    <string name="NET_ERROR_SETCFG_DST">Failed to set DST</string>
+
+    <string name="NET_ERROR_GETCFG_VIDEO_OSD">Failed to get video osd setup.</string>
+
+    <string name="NET_ERROR_SETCFG_VIDEO_OSD">Failed to set video osd</string>
+
+    <string name="NET_ERROR_GETCFG_GPRSCDMA">Failed to get CDMA\GPRS configuration</string>
+
+    <string name="NET_ERROR_SETCFG_GPRSCDMA">Failed to set CDMA\GPRS configuration</string>
+
+    <string name="NET_ERROR_GETCFG_IPFILTER">Failed to get IP Filter configuration</string>
+
+    <string name="NET_ERROR_SETCFG_IPFILTER">Failed to set IP Filter configuration</string>
+
+    <string name="NET_ERROR_GETCFG_TALKENCODE">Failed to get Talk Encode configuration</string>
+
+    <string name="NET_ERROR_SETCFG_TALKENCODE">Failed to set Talk Encode configuration</string>
+
+    <string name="NET_ERROR_GETCFG_RECORDLEN">Failed to get The length of the video package configuration</string>
+
+    <string name="NET_ERROR_SETCFG_RECORDLEN">Failed to set The length of the video package configuration</string>
+
+    <string name="NET_DONT_SUPPORT_SUBAREA">Not support Network hard disk partition</string>
+
+    <string name="NET_ERROR_GET_AUTOREGSERVER">Failed to get the register server information</string>
+
+    <string name="NET_ERROR_CONTROL_AUTOREGISTER">Failed to control actively registration</string>
+
+    <string name="NET_ERROR_DISCONNECT_AUTOREGISTER">Failed to disconnect actively registration</string>
+
+    <string name="NET_ERROR_GETCFG_MMS">Failed to get mms configuration</string>
+
+    <string name="NET_ERROR_SETCFG_MMS">Failed to set mms configuration</string>
+
+    <string name="NET_ERROR_GETCFG_SMSACTIVATION">Failed to get SMS configuration</string>
+
+    <string name="NET_ERROR_SETCFG_SMSACTIVATION">Failed to set SMS configuration</string>
+
+    <string name="NET_ERROR_GETCFG_DIALINACTIVATION">Failed to get activation of a wireless connection</string>
+
+    <string name="NET_ERROR_SETCFG_DIALINACTIVATION">Failed to set activation of a wireless connection</string>
+
+    <string name="NET_ERROR_GETCFG_VIDEOOUT">Failed to get the parameter of video output</string>
+
+    <string name="NET_ERROR_SETCFG_VIDEOOUT">Failed to set the configuration of video output</string>
+
+    <string name="NET_ERROR_GETCFG_OSDENABLE">Failed to get osd overlay enabling</string>
+
+    <string name="NET_ERROR_SETCFG_OSDENABLE">Failed to set OSD overlay enabling</string>
+
+    <string name="NET_ERROR_SETCFG_ENCODERINFO">Failed to set digital input configuration of front encoders</string>
+
+    <string name="NET_ERROR_GETCFG_TVADJUST">Failed to get TV adjust configuration</string>
+
+    <string name="NET_ERROR_SETCFG_TVADJUST">Failed to set TV adjust configuration</string>
+
+    <string name="NET_ERROR_CONNECT_FAILED">Failed to request to establish a connection</string>
+
+    <string name="NET_ERROR_SETCFG_BURNFILE">Failed to request to upload burn files</string>
+
+    <string name="NET_ERROR_SNIFFER_GETCFG">Failed to get capture configuration information</string>
+
+    <string name="NET_ERROR_SNIFFER_SETCFG">Failed to set capture configuration information</string>
+
+    <string name="NET_ERROR_DOWNLOADRATE_GETCFG">Failed to get download restrictions information</string>
+
+    <string name="NET_ERROR_DOWNLOADRATE_SETCFG">Failed to set download restrictions information</string>
+
+    <string name="NET_ERROR_SEARCH_TRANSCOM">Failed to query serial port parameters</string>
+
+    <string name="NET_ERROR_GETCFG_POINT">Failed to get the preset info</string>
+
+    <string name="NET_ERROR_SETCFG_POINT">Failed to set the preset info</string>
+
+    <string name="NET_SDK_LOGOUT_ERROR">SDK log out the device abnormally</string>
+
+    <string name="NET_ERROR_GET_VEHICLE_CFG">Failed to get vehicle configuration</string>
+
+    <string name="NET_ERROR_SET_VEHICLE_CFG">Failed to set vehicle configuration</string>
+
+    <string name="NET_ERROR_GET_ATM_OVERLAY_CFG">Failed to get ATM overlay configuration</string>
+
+    <string name="NET_ERROR_SET_ATM_OVERLAY_CFG">Failed to set ATM overlay configuration</string>
+
+    <string name="NET_ERROR_GET_ATM_OVERLAY_ABILITY">Failed to get ATM overlay ability</string>
+
+    <string name="NET_ERROR_GET_DECODER_TOUR_CFG">Failed to get decoder tour configuration</string>
+
+    <string name="NET_ERROR_SET_DECODER_TOUR_CFG">Failed to set decoder tour configuration</string>
+
+    <string name="NET_ERROR_CTRL_DECODER_TOUR">Failed to control decoder tour</string>
+
+    <string name="NET_GROUP_OVERSUPPORTNUM">Beyond the device supports for the largest number of user groups</string>
+
+    <string name="NET_USER_OVERSUPPORTNUM">Beyond the device supports for the largest number of users</string>
+
+    <string name="NET_ERROR_GET_SIP_CFG">Failed to get SIP configuration</string>
+
+    <string name="NET_ERROR_SET_SIP_CFG">Failed to set SIP configuration</string>
+
+    <string name="NET_ERROR_GET_SIP_ABILITY">Failed to get SIP capability</string>
+
+    <string name="NET_ERROR_GET_WIFI_AP_CFG">Failed to get WIFI ap\' configuration</string>
+
+    <string name="NET_ERROR_SET_WIFI_AP_CFG">Failed to set WIFI ap configuration</string>
+
+    <string name="NET_ERROR_GET_DECODE_POLICY">Failed to get decode policy</string>
+
+    <string name="NET_ERROR_SET_DECODE_POLICY">Failed to set decode policy</string>
+
+    <string name="NET_ERROR_TALK_REJECT">Refuse talk</string>
+
+    <string name="NET_ERROR_TALK_OPENED">Talk has opened by other client</string>
+
+    <string name="NET_ERROR_TALK_RESOURCE_CONFLICIT">Resource conflict</string>
+
+    <string name="NET_ERROR_TALK_UNSUPPORTED_ENCODE">Unsupported encode type</string>
+
+    <string name="NET_ERROR_TALK_RIGHTLESS">No right</string>
+
+    <string name="NET_ERROR_TALK_FAILED">Request failed</string>
+
+    <string name="NET_ERROR_GET_MACHINE_CFG">Failed to get device relative config</string>
+
+    <string name="NET_ERROR_SET_MACHINE_CFG">Failed to set device relative config</string>
+
+    <string name="NET_ERROR_GET_DATA_FAILED">Get data failed</string>
+
+    <string name="NET_ERROR_MAC_VALIDATE_FAILED">MAC validate failed</string>
+
+    <string name="NET_ERROR_GET_INSTANCE">Failed to get server instance</string>
+
+    <string name="NET_ERROR_JSON_REQUEST">Generated json string is error</string>
+
+    <string name="NET_ERROR_JSON_RESPONSE">The responding json string is error</string>
+
+    <string name="NET_ERROR_VERSION_HIGHER">The protocol version is lower than current version</string>
+
+    <string name="NET_SPARE_NO_CAPACITY">Hotspare disk operation failed. The capacity is low</string>
+
+    <string name="NET_ERROR_SOURCE_IN_USE">Display source is used by other output</string>
+
+    <string name="NET_ERROR_REAVE">Advanced users grab low-level user resource</string>
+
+    <string name="NET_ERROR_NETFORBID">Net forbid</string>
+
+    <string name="NET_ERROR_GETCFG_MACFILTER">Get MAC filter configuration error</string>
+
+    <string name="NET_ERROR_SETCFG_MACFILTER">Set MAC filter configuration error</string>
+
+    <string name="NET_ERROR_GETCFG_IPMACFILTER">Get IP/MAC filter configuration error</string>
+
+    <string name="NET_ERROR_SETCFG_IPMACFILTER">Set IP/MAC filter configuration error</string>
+
+    <string name="NET_ERROR_OPERATION_OVERTIME">Operation over time</string>
+
+    <string name="NET_ERROR_SENIOR_VALIDATE_FAILED">Senior validation failure</string>
+
+    <string name="NET_ERROR_DEVICE_ID_NOT_EXIST">Device ID is not exist</string>
+
+    <string name="NET_ERROR_UNSUPPORTED">Unsupported operation</string>
+
+    <string name="NET_ERROR_PROXY_DLLLOAD">Proxy dll load error</string>
+
+    <string name="NET_ERROR_PROXY_ILLEGAL_PARAM">Proxy user parameter is not legal</string>
+
+    <string name="NET_ERROR_PROXY_INVALID_HANDLE">Handle invalid</string>
+
+    <string name="NET_ERROR_PROXY_LOGIN_DEVICE_ERROR">Login device error</string>
+
+    <string name="NET_ERROR_PROXY_START_SERVER_ERROR">Start proxy server error</string>
+
+    <string name="NET_ERROR_SPEAK_FAILED">Request speak failed</string>
+
+    <string name="NET_ERROR_NOT_SUPPORT_F6">Unsupported F6</string>
+
+    <string name="NET_ERROR_CD_UNREADY">CD is not ready</string>
+
+    <string name="NET_ERROR_DIR_NOT_EXIST">Directory does not exist</string>
+
+    <string name="NET_ERROR_UNSUPPORTED_SPLIT_MODE">The device does not support the segmentation model</string>
+
+    <string name="NET_ERROR_OPEN_WND_PARAM">Open the window parameter is illegal</string>
+
+    <string name="NET_ERROR_LIMITED_WND_COUNT">Open the window more than limit</string>
+
+    <string name="NET_ERROR_UNMATCHED_REQUEST">Request command with the current pattern don\'t match</string>
+
+    <string name="NET_RENDER_ENABLELARGEPICADJUSTMENT_ERROR">Render Library to enable high-definition image internal adjustment strategy error</string>
+
+    <string name="NET_ERROR_UPGRADE_FAILED">Upgrade equipment failure</string>
+
+    <string name="NET_ERROR_NO_TARGET_DEVICE">Can\'t find the target device</string>
+
+    <string name="NET_ERROR_NO_VERIFY_DEVICE">Can\'t find the verify device</string>
+
+    <string name="NET_ERROR_CASCADE_RIGHTLESS">No cascade permissions</string>
+
+    <string name="NET_ERROR_LOW_PRIORITY">Low priority</string>
+
+    <string name="NET_ERROR_REMOTE_REQUEST_TIMEOUT">The remote device request timeout</string>
+
+    <string name="NET_ERROR_LIMITED_INPUT_SOURCE">Source beyond maximum route restrictions</string>
+
+    <string name="NET_ERROR_SET_LOG_PRINT_INFO">Failed to set log print</string>
+
+    <string name="NET_ERROR_PARAM_DWSIZE_ERROR">The dwSize is not initialized in input param</string>
+
+    <string name="NET_ERROR_LIMITED_MONITORWALL_COUNT">TV wall exceed limit</string>
+
+    <string name="NET_ERROR_PART_PROCESS_FAILED">Fail to execute part of the process</string>
+
+    <string name="NET_ERROR_TARGET_NOT_SUPPORT">Fail to transmit due to not supported by target</string>
+
+    <string name="NET_ERROR_VISITE_FILE">Access to the file failed</string>
+
+    <string name="NET_ERROR_DEVICE_STATUS_BUSY">Device busy</string>
+
+    <string name="NET_USER_PWD_NOT_AUTHORIZED">Fail to change the password</string>
+
+    <string name="NET_USER_PWD_NOT_STRONG">Password strength is not enough</string>
+
+    <string name="NET_ERROR_NO_SUCH_CONFIG">No corresponding setup</string>
+
+    <string name="NET_ERROR_AUDIO_RECORD_FAILED">Failed to record audio</string>
+
+    <string name="NET_ERROR_SEND_DATA_FAILED">Failed to send out data</string>
+
+    <string name="NET_ERROR_OBSOLESCENT_INTERFACE">Abandoned port</string>
+
+    <string name="NET_ERROR_INSUFFICIENT_INTERAL_BUF">Internal buffer is not sufficient</string>
+
+    <string name="NET_ERROR_NEED_ENCRYPTION_PASSWORD">Verify password when changing device IP</string>
+
+    <string name="NET_ERROR_SERIALIZE_ERROR">Failed to serialize data</string>
+
+    <string name="NET_ERROR_DESERIALIZE_ERROR">Failed to deserialize data</string>
+
+    <string name="NET_ERROR_LOWRATEWPAN_ID_EXISTED">The wireless id is already existed</string>
+
+    <string name="NET_ERROR_LOWRATEWPAN_ID_LIMIT">The wireless id limited</string>
+
+    <string name="NET_ERROR_LOWRATEWPAN_ID_ABNORMAL">Add the wireless id abnormaly</string>
+
+    <string name="compress_format">Encode Setting</string>
+    <string name="resolve_ratio">Resolution</string>
+    <string name="frame_rate">Frame Rate(FPS)</string>
+    <string name="bit_stream">Bit Rate</string>
+    <string name="setting">Setting</string>
+    <string name="double_channel_view">DoubleChannelPreview</string>
+    <string name="play_back_bytime">PlayBackByTime</string>
+    <string name="smartconfig_sn">Device SN</string>
+    <string name="smartconfig_ssid">WLAN SSID</string>
+    <string name="smartconfig_pwd">WLAN Password</string>
+    <string name="info_success">Success</string>
+    <string name="info_failed">Failed</string>
+    <string name="start_alarm_listen">Start Listen</string>
+    <string name="stop_alarm_listen">Stop Listen</string>
+    <string name="start_replay">Start Replay</string>
+    <string name="stop_replay">Stop Replay</string>
+    <string name="start_record">Start Record</string>
+    <string name="stop_record">Stop Record</string>
+
+    <string name="function_list_files_browser">File Browser</string>
+    <string name="device_control_restart_succeed">Device rebooting</string>
+    <string name="device_control_restart_failed">Device reboot failed</string>
+    <string name="device_control_settime_succeed">Device setup time succeed</string>
+    <string name="device_control_settime_failed">Set device time failed</string>
+    <string name="device_control_gettime_failed">Get device time failed</string>
+    <string name="device_control_reboot_tips">Are you sure you want to reboot it?</string>
+    <string name="device_time">Device time</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="encode_set_failed">Encode failed</string>
+    <string name="encode_set_success">Encode succeed</string>
+    <string name="operation_failed">Operation failed</string>
+    <string name="starttime">Start Time</string>
+
+    <string name="des_right_image">Right</string>
+    <string name="des_dialog_progress">Progress Dialog</string>
+    <string name="device_disconnected">Your device has been disconnected, Logout and reconnect</string>
+    <string name="error_code">ErrorCode</string>
+    <string name="start_time_error">Failed to retrieve playback date</string>
+    <string name="get_osd_time_failed">Get OSD Time Failed</string>
+    <string name="get_encode_failed">Get encode information failed</string>
+    <string name="real_play_failed">Confirm if the realplay is successful</string>
+
+    <string name="scan_qr_code">Scan Qr Code</string>
+    <string name="restart_preview">Restart Preview</string>
+    <string name="please_qr_put_in_box">Please put the two-dimensional code/bar code in the box</string>
+    <string name="config_device_to_wifi">WIFI Config</string>
+    <string name="config_succeed">Config Succeed.</string>
+    <string name="config_failed">Config Failed.</string>
+    <string name="configing">Configing</string>
+    <string name="audio_pair">AudioPair</string>
+    <string name="device_search_failed">Device search failed</string>
+
+    <string name="activity_function_list_motion_detect">MotionDetect</string>
+    <string name="refresh">Refresh</string>
+    <string name="save">Save</string>
+    <string name="motion_detect_enable">MotionDetect Enable</string>
+    <string name="time_section">TimeSection</string>
+    <string name="dejitter">Dejitter</string>
+    <string name="motion_detect_area">MotionDetect Area</string>
+    <string name="record_enable">Record Enable</string>
+    <string name="record_delay">Record Delay</string>
+    <string name="alarm_out_enable">AlarmOut Enable</string>
+    <string name="alarm_out_delay">AlarmOut Delay</string>
+    <string name="snap_enable">Snap Enable</string>
+    <string name="sense_level">Sense Level</string>
+    <string name="threshold">Threshold</string>
+    <string name="succeed_get_motion_detect_configuration">Succeed to get motiondetect configuration</string>
+    <string name="failed_get_motion_detect_configuration">Failed to get motiondetect configuration</string>
+    <string name="succeed_set_motion_detect_configuration">Succeed to set motiondetect configuration</string>
+    <string name="failed_set_motion_detect_configuration">Failed to set motiondetect configuration</string>
+    <string name="getting_mition_detect_configuration">Getting motiondetect configuration</string>
+    <string name="setting_mition_detect_configuration">Setting motiondetect configuration</string>
+    <string name="second">s</string>
+    <string name="date">Date</string>
+    <string name="select_date">Select Date</string>
+
+    <array name="week">
+        <item name="sun_week">Sunday</item>
+        <item name="mon_week">Monday</item>
+        <item name="tue_week">Tuesday</item>
+        <item name="wed_week">Wednesday</item>
+        <item name="thu_week">Thursday</item>
+        <item name="fri_week">Friday</item>
+        <item name="sat_week">Saturday</item>
+    </array>
+
+    <array name="week_short">
+        <item name="sun">Sun</item>
+        <item name="mon">Mon</item>
+        <item name="tue">Tue</item>
+        <item name="wed">Wed</item>
+        <item name="thu">Thur</item>
+        <item name="fri">Fri</item>
+        <item name="sat">Sat</item>
+    </array>
+
+    <!--AP Config-->
+    <string name="confirm_connect_device_hotspot">Please make sure you have connected devcie hotspot</string>
+    <string name="ap_search_wlan_list">Search WLAN List</string>
+    <string name="wlan_name_title">Wlan Name</string>
+    <string name="getting_wlan_list">Getting WLAN List</string>
+    <string name="get_wlan_list_failed">Get WLAN List Failed</string>
+    <string name="get_wlan_list_succeed">Get WLAN List Succeed</string>
+    <string name="setting_ap_config">Setting AP Config</string>
+    <string name="ap_config_succeed">AP Config Succeed</string>
+    <string name="ap_config_failed">AP Config Failed</string>
+    <string name="ap_config_completed">AP Config Completed</string>
+
+    <string name="channel_title_enable">Channel Title Enable</string>
+    <string name="channel_title_name">Channel Title</string>
+    <string name="time_title_enable">Time Title Enable</string>
+    <string name="show_week">Show Week</string>
+    <string name="only_implement_osd_function_of_main_stream">This demo only implements the OSD function of the main stream.</string>
+    <string name="get_channel_title_failed">Failed to get channel title</string>
+    <string name="get_channel_name_failed">Failed to get channel name</string>
+    <string name="get_channel_title_and_name_failed">Failed to get channel title and name</string>
+    <string name="get_channel_title_and_name_succeed">Succeed to get channel title and name</string>
+    <string name="set_channel_title_failed">Failed to set channel title</string>
+    <string name="set_channel_name_failed">Failed to set channel name</string>
+    <string name="set_channel_title_and_name_failed">Failed to set channel title and name</string>
+    <string name="set_channel_title_and_name_succeed">Succeed to set channel title and name</string>
+    <string name="get_time_title_failed">Failed to get time title</string>
+    <string name="get_time_title_succeed">Succeed to get time title</string>
+    <string name="set_time_title_failed">Failed to set time title</string>
+    <string name="set_time_title_succeed">Succeed to set time title</string>
+    <string name="input_channel_name">Please input channel name</string>
+    <string name="channel_name_maxlen_255">Max length of chanenl name is 255</string>
+</resources>

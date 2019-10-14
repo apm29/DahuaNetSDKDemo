@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/motion_detect_area_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/motion_detect_area_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:menu="@menu/save_menu">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/liner_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/motion_detect_area_appbar"
+        android:orientation="vertical">
+
+        <!--灵敏度-->
+        <RelativeLayout
+            android:id="@+id/motion_sense_level_layout"
+            style="@style/config_relativeLayout">
+
+            <TextView
+                android:id="@+id/motion_sense_level_label"
+                style="@style/config_text"
+                android:text="@string/sense_level" />
+
+            <TextView
+                android:id="@+id/motion_sense_level_text"
+                style="@style/config_text_image"
+                android:layout_toRightOf="@id/motion_sense_level_label"
+                android:drawableRight="@drawable/mm_submenu"
+                android:enabled="false" />
+        </RelativeLayout>
+
+        <!--阀值-->
+        <RelativeLayout
+            android:id="@+id/motion_threshold_layout"
+            style="@style/config_relativeLayout">
+
+            <TextView
+                android:id="@+id/motion_threshold_label"
+                style="@style/config_text"
+                android:text="@string/threshold" />
+
+            <TextView
+                android:id="@+id/motion_threshold_text"
+                style="@style/config_text_image"
+                android:layout_toRightOf="@id/motion_threshold_label"
+                android:drawableRight="@drawable/mm_submenu"
+                android:enabled="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/liner_1"
+        android:layout_above="@+id/motion_detect_area_layout"
+        android:gravity="center">
+
+        <com.company.netsdk.activity.MotionDetectConfig.view.CustomScrollView
+            android:id="@+id/motion_vScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+            <com.company.netsdk.activity.MotionDetectConfig.view.CustomHScrollView
+                android:id="@+id/motion_hScroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none"
+                >
+                <LinearLayout
+                    android:id="@+id/motion_area_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+                    <com.company.netsdk.activity.MotionDetectConfig.view.MotionAreaView
+                        android:id="@+id/motion_areaView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    </com.company.netsdk.activity.MotionDetectConfig.view.MotionAreaView>
+                </LinearLayout>
+            </com.company.netsdk.activity.MotionDetectConfig.view.CustomHScrollView>
+        </com.company.netsdk.activity.MotionDetectConfig.view.CustomScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/motion_detect_area_layout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_holo_light">
+
+        <ImageView
+            android:id="@+id/motion_detect_area_edit"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/area_edit_selecter"/>
+
+        <ImageView
+            android:id="@+id/motion_detect_area_delete"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/area_clear_selecter"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

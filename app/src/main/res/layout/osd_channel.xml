@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/channel_title_enable_layout"
+        style="@style/config_relativeLayout">
+
+        <TextView
+            android:id="@+id/channel_title_enable_label"
+            style="@style/config_text"
+            android:text="@string/channel_title_enable" />
+
+        <ImageView
+            android:id="@+id/channel_title_enable_btn"
+            style="@style/config_image"
+            android:src="@drawable/mm_on_off"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_title_name_layout"
+        style="@style/config_relativeLayout"
+        android:layout_below="@+id/channel_title_enable_layout">
+
+        <TextView
+            android:id="@+id/channel_title_name_label"
+            style="@style/config_text"
+            android:text="@string/channel_title_name" />
+
+        <EditText
+            android:id="@+id/channel_title_name_text"
+            style="@style/config_text_image"
+            android:background="@null"
+            android:layout_toRightOf="@id/channel_title_name_label"
+            android:drawableRight="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/channel_title_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/set_channel_title_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="@string/set"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

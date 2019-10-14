@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.company.netsdk">
+
+    <!-- [START gcm_permission] -->
+    <permission
+        android:name="com.company.netsdk.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" >
+    </permission>
+
+    <uses-permission android:name="com.company.netsdk.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- [END gcm_permission] -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".activity.NetSDKApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NetSDKBaseTheme">
+
+        <!-- 适配全面屏 18::9 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+
+        <activity android:name=".activity.MainActivity"
+                    android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.IPLoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.P2PLoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.WIFIConfigurationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name=".activity.DeviceSearchActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.InitDevAccountActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.FunctionListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.LivePreviewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.LivePreviewDoubleChannelActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.PlaybackActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.DownLoadRecordFileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.MarkRecordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.TalkActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.VideoTalkActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.AlarmListenActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.AlarmPushActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.AlarmControlActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.DeviceControlActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.FileBrowserActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.CapturePictureActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.MotionDetectConfig.MotionDetectConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"/>
+
+        <activity android:name=".activity.MotionDetectConfig.MotionDetectTimeSetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"/>
+
+        <activity android:name=".activity.MotionDetectConfig.MotionDetectTimeShowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"/>
+
+        <activity android:name=".activity.MotionDetectConfig.MotionDetectAreaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"/>
+
+        <activity android:name=".activity.APConfig.ApIPLoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.APConfig.ApSearchWLANListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"/>
+
+        <activity android:name=".activity.APConfig.ApConfigActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".common.TestInterfaceActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- [START gcm_service] -->
+        <service android:name="com.company.netsdk.common.C2DMReceiver"/>
+        <receiver
+            android:name="com.company.netsdk.common.C2DMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.mm.android.direct.gdmssphone" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.mm.android.direct.gdmssphone" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_service] -->
+
+    </application>
+</manifest>

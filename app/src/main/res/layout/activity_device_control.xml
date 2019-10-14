@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.company.netsdk.activity.DeviceControlActivity">
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/device_control_restart"
+        android:id="@+id/buttonReStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/device_control_setuptime"
+        android:id="@+id/buttonSetUpTime"
+        android:layout_below="@+id/buttonReStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/device_control_gettime"
+        android:id="@+id/buttonGetTime"
+        android:layout_below="@+id/buttonSetUpTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:textAllCaps="false"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textGetTime"
+        android:layout_below="@+id/buttonGetTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

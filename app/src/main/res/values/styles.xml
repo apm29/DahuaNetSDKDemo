@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NetSDKBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <item name="colorPrimaryDark">@color/primaryBlue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/NetSDKButton</item>
+    </style>
+
+    <style name="ThemeHoloLight" parent="android:style/Theme.Holo.Light" >
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <style name="DialogFullScreen" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="NetSDKButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button_selecter</item>
+    </style>
+
+    <style name="NetSDKEditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/retange_line</item>
+        <item name="android:height">36dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <item name="colorPrimaryDark">@color/primaryBlue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:actionMenuTextAppearance">@style/MneuStyle</item>
+    </style>
+
+    <style name="MneuStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="config_relativeLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/retange_line</item>
+    </style>
+
+    <style name="config_text" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="config_text_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#747474</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="config_image_left">
+        <item name="android:layout_alignParentRight">false</item>
+        <item name="android:layout_alignParentLeft">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="config_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+</resources>

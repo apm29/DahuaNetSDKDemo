@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/motion_detect_config_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:theme="@style/AppTheme.PopupOverlay"
+            app:layout_collapseMode="pin"
+            app:menu="@menu/fresh_save_menu">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <!--通道-->
+            <RelativeLayout
+                android:id="@+id/motion_channel_layout"
+                style="@style/config_relativeLayout">
+
+                <TextView
+                    android:id="@+id/motion_channel_label"
+                    style="@style/config_text"
+                    android:text="@string/channel" />
+
+                <TextView
+                    android:id="@+id/motion_channel_text"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/motion_channel_label"
+                    android:drawableRight="@drawable/mm_submenu"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/darkStatusBar">
+
+            </RelativeLayout>
+
+            <!--动检使能-->
+            <RelativeLayout
+                android:id="@+id/motion_enable_layout"
+                style="@style/config_relativeLayout">
+
+                <TextView
+                    android:id="@+id/motion_enable_label"
+                    style="@style/config_text"
+                    android:text="@string/motion_detect_enable" />
+
+                <ImageView
+                    android:id="@+id/motion_enable_btn"
+                    style="@style/config_image"
+                    android:src="@drawable/mm_on_off"/>
+            </RelativeLayout>
+
+            <!--布撤防时间段-->
+            <RelativeLayout
+                android:id="@+id/motion_time_layout"
+                style="@style/config_relativeLayout">
+
+                <TextView
+                    android:id="@+id/motion_time_label"
+                    style="@style/config_text"
+                    android:text="@string/time_section" />
+
+                <TextView
+                    android:id="@+id/motion_time_text"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/motion_time_label"
+                    android:drawableRight="@drawable/mm_submenu"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <!--去抖动-->
+            <RelativeLayout
+                android:id="@+id/motion_dejitter_layout"
+                style="@style/config_relativeLayout">
+
+                <TextView
+                    android:id="@+id/motion_dejitter_label"
+                    style="@style/config_text"
+                    android:text="@string/dejitter" />
+
+                <TextView
+                    android:id="@+id/motion_dejitter_text"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/motion_dejitter_label"
+                    android:drawableRight="@drawable/mm_submenu"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <!--区域设置-->
+            <RelativeLayout
+                android:id="@+id/motion_region_layout"
+                style="@style/config_relativeLayout">
+
+                <TextView
+                    android:id="@+id/motion_region_label"
+                    style="@style/config_text"
+                    android:text="@string/motion_detect_area" />
+
+                <TextView
+                    android:id="@+id/motion_region_text"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/motion_region_label"
+                    android:drawableRight="@drawable/mm_submenu"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/darkStatusBar">
+
+            </RelativeLayout>
+
+            <!--录像使能-->
+            <RelativeLayout
+                android:id="@+id/record_enable_layout"
+                style="@style/config_relativeLayout">
+
+                <TextView
+                    android:id="@+id/record_enable_label"
+                    style="@style/config_text"
+                    android:text="@string/record_enable" />
+
+                <ImageView
+                    android:id="@+id/record_enable_btn"
+                    style="@style/config_image"
+                    android:src="@drawable/mm_on_off" />
+            </RelativeLayout>
+
+            <!--录像延时-->
+            <RelativeLayout
+                android:id="@+id/record_delay_layout"
+                style="@style/config_relativeLayout">
+
+                <TextView
+                    android:id="@+id/record_delay_label"
+                    style="@style/config_text"
+                    android:text="@string/record_delay" />
+
+                <TextView
+                    android:id="@+id/record_delay_text"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/record_delay_label"
+                    android:drawableRight="@drawable/mm_submenu"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/darkStatusBar">
+
+            </RelativeLayout>
+
+            <!--报警输出使能-->
+            <RelativeLayout
+                android:id="@+id/alarmout_enable_layout"
+                style="@style/config_relativeLayout"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/alarmout_enable_label"
+                    style="@style/config_text"
+                    android:text="@string/alarm_out_enable" />
+
+                <ImageView
+                    android:id="@+id/alarmout_enable_btn"
+                    style="@style/config_image"
+                    android:src="@drawable/mm_on_off" />
+            </RelativeLayout>
+
+            <!--报警输出延时-->
+            <RelativeLayout
+                android:id="@+id/alarmout_delay_layout"
+                style="@style/config_relativeLayout"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/alarmout_delay_label"
+                    style="@style/config_text"
+                    android:text="@string/alarm_out_delay" />
+
+                <TextView
+                    android:id="@+id/alarmout_delay_text"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/alarmout_delay_label"
+                    android:drawableRight="@drawable/mm_submenu"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/darkStatusBar"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+            <!--抓图使能-->
+            <RelativeLayout
+                android:id="@+id/snap_enable_layout"
+                style="@style/config_relativeLayout">
+
+                <TextView
+                    android:id="@+id/snap_enable_label"
+                    style="@style/config_text"
+                    android:text="@string/snap_enable" />
+
+                <ImageView
+                    android:id="@+id/snap_enable_btn"
+                    style="@style/config_image"
+                    android:src="@drawable/mm_on_off"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

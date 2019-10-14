@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.netsdk.activity.AlarmControlActivity">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/input_channel_linear"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/alarm_control_input_channel"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/spinner_alarm_input_channel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/wp_spinner_bg"/>
+
+        <Button
+            android:layout_weight="3"
+            android:textAllCaps="false"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/get"
+            android:id="@+id/inputgetbutton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/input_state_linear"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_channel_linear">
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/alarm_control_input_state"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/spinner_alarm_input_state"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/wp_spinner_bg"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/set"
+            android:id="@+id/inputsetbutton"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/output_channel_linear"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_state_linear">
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/alarm_control_output_channel"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/spinner_alarm_output_channel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/wp_spinner_bg"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/get"
+            android:id="@+id/outputgetbutton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/output_state_linear"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/output_channel_linear">
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/alarm_control_output_state"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/spinner_alarm_output_state"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/wp_spinner_bg"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/set"
+            android:id="@+id/outputsetbutton"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/trigger_channel_linear"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/output_state_linear">
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/alarm_control_trigger_channel"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/spinner_alarm_trigger_channel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/wp_spinner_bg"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/get"
+            android:id="@+id/triggergetbutton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/trigger_mode_linear"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trigger_channel_linear">
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/alarm_control_trigger_mode"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_weight="2"
+            android:id="@+id/spinner_alarm_trigger_mode"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/wp_spinner_bg"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/set"
+            android:id="@+id/triggersetbutton"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.MainActivity"
+    android:gravity="center">
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/activity_main_ip"
+        android:id="@+id/btnIPLogin"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/activity_main_p2p"
+        android:id="@+id/btnP2PLogin"
+        android:layout_below="@+id/btnIPLogin"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/activity_main_wifi_config"
+        android:id="@+id/btnWIFIConfig"
+        android:layout_below="@+id/btnP2PLogin"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/activity_main_search_device"
+        android:id="@+id/btnDevcieSearch"
+        android:layout_below="@+id/btnWIFIConfig"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/activity_main_init_dev_account"
+        android:id="@+id/btnInitDevAccount"
+        android:layout_below="@+id/btnDevcieSearch"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/activity_main_ap_config"
+        android:id="@+id/btnApConfig"
+        android:layout_below="@+id/btnInitDevAccount"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

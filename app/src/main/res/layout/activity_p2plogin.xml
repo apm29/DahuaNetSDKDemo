@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:title="@string/activity_main_p2p"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".activity.P2PLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/ip_liner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@drawable/divier"
+        android:layout_marginTop="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ip_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.company.netsdk.common.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/editTextP2pServerIp"
+                android:hint="@string/activity_p2plogin_server_ip"
+                android:inputType="text"
+                android:textSize="13sp"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/port_liner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ip_liner"
+        android:orientation="horizontal"
+        android:background="@drawable/divier"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/port_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.company.netsdk.common.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:maxLength="6"
+                android:id="@+id/editTextP2pServerPort"
+                android:hint="@string/activity_p2plogin_server_port"
+                android:inputType="number"
+                android:textSize="13sp"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/username_liner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/port_liner"
+        android:orientation="horizontal"
+        android:background="@drawable/divier"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/username_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.company.netsdk.common.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/editTextP2pUsername"
+                android:hint="@string/activity_p2plogin_username"
+                android:inputType="text"
+                android:textSize="13sp"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/p2p_passwd_liner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/username_liner"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/divier"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwd_text_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <com.company.netsdk.common.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/editTextP2pPassword"
+                android:hint="@string/activity_p2plogin_password"
+                android:inputType="textPassword"
+                android:textSize="13sp"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <com.company.netsdk.common.EyeImageButton
+            android:id="@+id/eye_p2p_pwd_button_p2p"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:background="@drawable/mobile_closeeye"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/p2p_sn_liner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/p2p_passwd_liner"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/divier"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sn_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <com.company.netsdk.common.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/editTextP2pDeviceId"
+                android:hint="@string/activity_p2plogin_device_id"
+                android:inputType="text"
+                android:textSize="13sp"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/scan_button_p2p"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/scan_img"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/device_port_liner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/p2p_sn_liner"
+        android:orientation="horizontal"
+        android:background="@drawable/divier"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/device_port_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.company.netsdk.common.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/editTextP2pDevicePort"
+                android:hint="@string/activity_p2plogin_device_port"
+                android:inputType="number"
+                android:textSize="13sp"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/device_username_liner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/device_port_liner"
+        android:orientation="horizontal"
+        android:background="@drawable/divier"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/device_username_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.company.netsdk.common.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/editTextP2pDeviceUsername"
+                android:hint="@string/activity_p2plogin_device_username"
+                android:inputType="text"
+                android:textSize="13sp"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/device_passwd_liner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/device_username_liner"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/divier"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/device_passwd_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <com.company.netsdk.common.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/editTextP2pDeivcePassword"
+                android:hint="@string/activity_p2plogin_device_password"
+                android:inputType="textPassword"
+                android:textSize="13sp"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <com.company.netsdk.common.EyeImageButton
+            android:id="@+id/eye_device_pwd_button_p2p"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:background="@drawable/mobile_closeeye"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_remember_info"
+        android:id="@+id/checkBoxP2p"
+        android:checked="true"
+        android:layout_below="@+id/device_passwd_liner"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/common_login"
+        android:id="@+id/buttonP2pLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
